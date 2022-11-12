@@ -26,5 +26,14 @@
         @else
             <p>O nome não é Pedro</p>
         @endif
+
+        {{-- Comentários no Blade --}}
+        @for($i = 0; $i < count($arr); $i++)
+            <p>{{ $arr[$i] }} - {{$i}}</p>
+        @endfor
+
+        @foreach($nomes as $nome)
+            <p>{{ $loop->index }} - {{ $nome }}</p>
+        @endforeach
     </body>
 </html>
