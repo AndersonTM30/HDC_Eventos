@@ -1,17 +1,7 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.main') {{-- Extende o layout --}}
+    @section('title', 'HDC Events') {{-- Cria um title dinâmico --}}
 
-        <title>Laravel</title>
-        <link rel="stylesheet" href="/css/styles.css">
-        <script src="/js/scripts.js"></script>
-        <!-- Fonts -->
-        <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-
-    </head>
-    <body >
+    @section('content') {{-- Cria o conteúdo da página welcome --}}
         <h1>Teste</h1>
         <img src="/img/banner.jpg" alt="Banner" height="300" width="100%">
         <p>Seu nome: {{ $nome }}</p>
@@ -31,5 +21,4 @@
         @foreach($nomes as $nome)
             <p>{{ $loop->index }} - {{ $nome }}</p>
         @endforeach
-    </body>
-</html>
+    @endsection
