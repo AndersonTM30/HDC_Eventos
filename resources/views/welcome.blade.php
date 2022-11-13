@@ -2,23 +2,27 @@
     @section('title', 'HDC Events') {{-- Cria um title dinâmico --}}
 
     @section('content') {{-- Cria o conteúdo da página welcome --}}
-        <h1>Teste</h1>
-        <img src="/img/banner.jpg" alt="Banner" height="300" width="100%">
-        <p>Seu nome: {{ $nome }}</p>
-        <p>Sua idade: {{ $idade }}</p>
-
-        @if($nome == "Pedro")
-            <p>O nome é Pedro</p>
-        @else
-            <p>O nome não é Pedro</p>
-        @endif
-
-        {{-- Comentários no Blade --}}
-        @for($i = 0; $i < count($arr); $i++)
-            <p>{{ $arr[$i] }} - {{$i}}</p>
-        @endfor
-
-        @foreach($nomes as $nome)
-            <p>{{ $loop->index }} - {{ $nome }}</p>
-        @endforeach
+        <div id="search-container" class="col-md-12">
+            <h1>Busque um evento</h1>
+            <form action="">
+                <input type="text" id="search" class="form-control" placeholder="Procurar...">
+            </form>
+        </div>
+        <div id="events-container" class="col-md-12">
+            <h2>Próximos Eventos</h2>
+            <p class="subtitle">Veja os eventos dos próximos dias</p>
+            <div id="cards-container" class="row">
+                @foreach($events as $event)
+                    <div class="card col-md-3">
+                        <img src="/img/event_placeholder.jpg" alt="{{ $event->title }}">
+                        <div class="card-body">
+                            <p class="card-date">12/11/2022</p>
+                            <h5 class="card-title">{{ $event->title }}</h5>
+                            <p class="card-participants">X Participantes</p>
+                            <a href="#" class="btn btn-primary">Saber mais</a>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+        </div>
     @endsection

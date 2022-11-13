@@ -21,3 +21,7 @@ Para deletar as tabelas do banco de dados e criar novamente caso tenha alguma ad
 Para deletar alguma alteração feita nas migrations, utiliza-se o comando ``` php artisan migrate:rollback ```. <br>
 Para voltar todas as alterações feitas nas migrations, utiliza-se o comando ``` php artisan migrate:reset ```. <br>
 Para fazer o rollback e depois executar as migrations novamente, utiliza-se o comando ``` php artisan migrate:refresh ```. <br>
+
+## Criar Models
+Utilizado para fazer comunicação com o banco de dados para as operações de CRUD. <br>
+Para criar um model, utiliza-se o comando: ``` php artisan make:model Nome_da_model ```. <br>
