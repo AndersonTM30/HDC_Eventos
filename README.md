@@ -18,3 +18,6 @@ Para criar uma nova migration utiliza-se o comando ``` php artisan make:migratio
 Para ver o status das migrations utiliza-se o comando ``` php artisan migrate:status ```. <br>
 Para criar a tabela no banco de dados utiliza-se o comando ``` php artisan migrate ```. <br>
 Para deletar as tabelas do banco de dados e criar novamente caso tenha alguma adição de coluna, utiliza-se o comando ``` php artisan migrate:fresh  ```. <br>
+Para deletar alguma alteração feita nas migrations, utiliza-se o comando ``` php artisan migrate:rollback ```. <br>
+Para voltar todas as alterações feitas nas migrations, utiliza-se o comando ``` php artisan migrate:reset ```. <br>
+Para fazer o rollback e depois executar as migrations novamente, utiliza-se o comando ``` php artisan migrate:refresh ```. <br>
