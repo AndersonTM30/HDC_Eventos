@@ -16,7 +16,7 @@ use App\Http\Controllers\EventController;
 
 Route::get('/', [EventController::class, 'index']);
 
-Route::get('/events/create', [EventController::class, 'create']);
+Route::get('/events/create', [EventController::class, 'create'])->middleware('auth');//adicionado o middleware para verificar se o usuário está logado
 
 Route::get('/events/{id}', [EventController::class, 'show']);
 

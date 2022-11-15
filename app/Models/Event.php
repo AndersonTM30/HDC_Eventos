@@ -14,4 +14,8 @@ class Event extends Model
     ];
 
     protected $dates = ['date'];
+
+    public function user() {//adicionando o relacionamento one to many no model
+        return $this->belongsTo('App\Models\User');
+    }
 }

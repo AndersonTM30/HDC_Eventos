@@ -31,3 +31,7 @@ Instale a biblioteca Jetstream para facilitar a construção da autenticação c
 ``` composer require laravel/jetstream ```. <br>
 Para utilizar a sessão instalamos o pacote do Livewire com o comando:
 ``` php artisan jetstream:install livewire ```. <br>
+Instale as dependências do node com o comando:
+``` npm install ```. <br>
+Rode o servidor de autenticação com o comando:
+``` npm run dev ```. <br>
