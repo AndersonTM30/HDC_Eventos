@@ -27,3 +27,5 @@ Route::get('/contact', function () {
 });
 
 Route::get('/dashboard', [EventController::class, 'dashboard'])->middleware('auth');//redirecionando para a o dashboard
+
+Route::delete('/events/{id}', [EventController::class, 'destroy']);
