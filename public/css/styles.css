@@ -189,6 +189,10 @@ header {
     display: flex;
 }
 
+#description-container {
+    margin-top: 20px;
+}
+
 footer {
     text-align: center;
     background-color: #353E48;
