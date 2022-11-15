@@ -25,3 +25,9 @@ Para fazer o rollback e depois executar as migrations novamente, utiliza-se o co
 ## Criar Models
 Utilizado para fazer comunicação com o banco de dados para as operações de CRUD. <br>
 Para criar um model, utiliza-se o comando: ``` php artisan make:model Nome_da_model ```. <br>
+
+## Autenticação
+Instale a biblioteca Jetstream para facilitar a construção da autenticação com o comando: 
+``` composer require laravel/jetstream ```. <br>
+Para utilizar a sessão instalamos o pacote do Livewire com o comando:
+``` php artisan jetstream:install livewire ```. <br>
