@@ -4,8 +4,12 @@
     @section('content') 
         <div id="event-create-container" class="col-md6 offset-md3">
             <h1>Crie o seu evento</h1>
-            <form action="/events" method="post">
+            <form action="/events" method="post" enctype="multipart/form-data">
                 @csrf
+                <div class="form-group">
+                    <label for="image">Imagem do Evento:</label>
+                    <input type="file" name="image" placeholder="Imagem do evento" class="form-control-file" id="image">
+                </div>
                 <div class="form-group">
                     <label for="title">Evento:</label>
                     <input type="text" name="title" placeholder="Nome do evento" class="form-control" id="title">
