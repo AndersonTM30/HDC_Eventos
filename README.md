@@ -1,5 +1,16 @@
 # HDVEvents
-Aplicação de eventos com intuito de aprender os conceitos básicos do Laravel
+Aplicação de eventos com intuito de aprender os conceitos básicos do Laravel.
+
+## Pré Requisitos:
+Ter o <a href="https://www.php.net/downloads.php" target="_blank">PHP</a> instalado. <br>
+Ter o <a href="https://nodejs.org/en/download/" target="_blank">Node Js</a>  instaldo. <br>
+Ter o <a href="https://getcomposer.org/download/" target="_blank">Composer</a> instalado.
+
+## Como Utilizar:
+Clone a aplicação. <br>
+Excute o comando ``` composer install ``` para instalar as dependências do Laravel. <br>
+Execute o comando ``` npm install ``` para instalar as dependências do Node Js. <br>
+Executar o comando ``` php artisan serve ``` para inicializar o servidor.
 
 ## Conexão com o banco de dados
 Foi utilizado o banco de dados Sql Server no projeto, sua conexão é feita através do arquivo de variáveis de ambiente .env conforme mostra o exemplo abaixo:
