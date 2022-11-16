@@ -20,4 +20,9 @@ class Event extends Model
     public function user() {//adicionando o relacionamento one to many no model
         return $this->belongsTo('App\Models\User');
     }
+
+    public function users()
+    {
+        return $this->belongsToMany('App\Models\User');
+    }
 }
